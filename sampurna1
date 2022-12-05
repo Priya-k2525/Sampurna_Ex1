@@ -1,0 +1,25 @@
+package Sampurna_Test1;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Test1_sampurna {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+
+		String path = System.getProperty("user.dir");
+		String actual_path = "\\DriversAll\\chromedriver.exe";
+		
+		System.setProperty("webdriver.chrome.driver", path+actual_path);
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://www.google.com/");
+		driver.manage().window().maximize();
